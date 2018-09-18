@@ -1,0 +1,1 @@
+/home/hf/Desktop/nnnnn/test/data/testing/mozbase/moztest/moztest/output/__init__.py

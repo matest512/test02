@@ -1,0 +1,1839 @@
+INFO: checking for vcs source checkout... 
+INFO: no
+INFO: checking for a shell... 
+INFO: /bin/sh
+INFO: checking for host system type... 
+INFO: x86_64-pc-linux-gnu
+INFO: checking for target system type... 
+INFO: x86_64-pc-linux-gnu
+INFO: checking for a shell... 
+INFO: /bin/sh
+INFO: checking for host system type... 
+INFO: x86_64-pc-linux-gnu
+INFO: checking for target system type... 
+INFO: x86_64-pc-linux-gnu
+INFO: checking for android platform directory... 
+INFO: no
+INFO: checking for android sysroot directory... 
+INFO: no
+INFO: checking for android system directory... 
+INFO: no
+INFO: checking for the Android toolchain directory... 
+INFO: not found
+INFO: checking for android platform directory... 
+INFO: no
+INFO: checking for android system directory... 
+INFO: no
+INFO: checking for android sysroot directory... 
+INFO: no
+INFO: checking for the Android toolchain directory... 
+INFO: not found
+INFO: checking for vcs source checkout... 
+INFO: no
+INFO: checking whether cross compiling... 
+INFO: no
+INFO: checking for the target C compiler... 
+DEBUG: _cc: Trying gcc
+INFO: /usr/bin/gcc
+INFO: checking whether the target C compiler can be used... 
+DEBUG: Creating `/tmp/conftest.SkXW0Q.c` with content:
+DEBUG: | #if defined(_MSC_VER)
+DEBUG: | #if defined(__clang__)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #else
+DEBUG: | %COMPILER "msvc"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #endif
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | #  if !__cplusplus || __has_feature(cxx_alignof)
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #elif __STDC__
+DEBUG: | %STDC_VERSION 198900L
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #endif
+DEBUG: | #if _MSC_VER || __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/usr/bin/gcc -E /tmp/conftest.SkXW0Q.c`
+DEBUG: COMPILER = gcc
+DEBUG: VERSION = 5.4.0
+DEBUG: STDC_VERSION = 201112L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+DEBUG: Creating `/tmp/conftest.KrOEKL.c` with content:
+DEBUG: | #if defined(_MSC_VER)
+DEBUG: | #if defined(__clang__)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #else
+DEBUG: | %COMPILER "msvc"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #endif
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | #  if !__cplusplus || __has_feature(cxx_alignof)
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #elif __STDC__
+DEBUG: | %STDC_VERSION 198900L
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #endif
+DEBUG: | #if _MSC_VER || __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -E /tmp/conftest.KrOEKL.c`
+DEBUG: COMPILER = gcc
+DEBUG: VERSION = 5.4.0
+DEBUG: STDC_VERSION = 199901L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+INFO: yes
+INFO: checking for Python 3... 
+INFO: /usr/bin/python3 (3.5.2)
+INFO: checking for pkg_config... 
+DEBUG: pkg_config: Trying pkg-config
+INFO: /usr/bin/pkg-config
+INFO: checking for pkg-config version... 
+DEBUG: Executing: `/usr/bin/pkg-config --version`
+INFO: 0.29.1
+INFO: checking for yasm... 
+DEBUG: yasm: Trying yasm
+INFO: not found
+INFO: checking for android ndk version... 
+INFO: no
+INFO: checking for GoogleVR SDK... 
+INFO: Not specified
+INFO: checking the target C compiler version... 
+INFO: 5.4.0
+INFO: checking the target C compiler works... 
+DEBUG: Creating `/tmp/conftest.PrORk6.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -c /tmp/conftest.PrORk6.c`
+INFO: yes
+INFO: checking for the target C++ compiler... 
+DEBUG: _cxx: Trying /usr/bin/g++
+INFO: /usr/bin/g++
+INFO: checking whether the target C++ compiler can be used... 
+DEBUG: Creating `/tmp/conftest.2CQ1_r.cpp` with content:
+DEBUG: | #if defined(_MSC_VER)
+DEBUG: | #if defined(__clang__)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #else
+DEBUG: | %COMPILER "msvc"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #endif
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | #  if !__cplusplus || __has_feature(cxx_alignof)
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #elif __STDC__
+DEBUG: | %STDC_VERSION 198900L
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #endif
+DEBUG: | #if _MSC_VER || __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/usr/bin/g++ -E /tmp/conftest.2CQ1_r.cpp`
+DEBUG: COMPILER = gcc
+DEBUG: VERSION = 5.4.0
+DEBUG: cplusplus = 199711L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+DEBUG: Creating `/tmp/conftest.IEsvRX.cpp` with content:
+DEBUG: | #if defined(_MSC_VER)
+DEBUG: | #if defined(__clang__)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #else
+DEBUG: | %COMPILER "msvc"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #endif
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | #  if !__cplusplus || __has_feature(cxx_alignof)
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #elif __STDC__
+DEBUG: | %STDC_VERSION 198900L
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #endif
+DEBUG: | #if _MSC_VER || __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -E /tmp/conftest.IEsvRX.cpp`
+DEBUG: COMPILER = gcc
+DEBUG: VERSION = 5.4.0
+DEBUG: cplusplus = 201402L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+INFO: yes
+INFO: checking the target C++ compiler version... 
+INFO: 5.4.0
+INFO: checking the target C++ compiler works... 
+DEBUG: Creating `/tmp/conftest.bAtdTz.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.bAtdTz.cpp`
+INFO: yes
+INFO: checking for the host C compiler... 
+DEBUG: _host_cc: Trying /usr/bin/gcc
+INFO: /usr/bin/gcc
+INFO: checking whether the host C compiler can be used... 
+DEBUG: Creating `/tmp/conftest.afsHLB.c` with content:
+DEBUG: | #if defined(_MSC_VER)
+DEBUG: | #if defined(__clang__)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #else
+DEBUG: | %COMPILER "msvc"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #endif
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | #  if !__cplusplus || __has_feature(cxx_alignof)
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #elif __STDC__
+DEBUG: | %STDC_VERSION 198900L
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #endif
+DEBUG: | #if _MSC_VER || __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -E /tmp/conftest.afsHLB.c`
+DEBUG: COMPILER = gcc
+DEBUG: VERSION = 5.4.0
+DEBUG: STDC_VERSION = 199901L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+INFO: yes
+INFO: checking the host C compiler version... 
+INFO: 5.4.0
+INFO: checking the host C compiler works... 
+DEBUG: Creating `/tmp/conftest.klcPZX.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -c /tmp/conftest.klcPZX.c`
+INFO: yes
+INFO: checking for the host C++ compiler... 
+DEBUG: _host_cxx: Trying /usr/bin/g++
+INFO: /usr/bin/g++
+INFO: checking whether the host C++ compiler can be used... 
+DEBUG: Creating `/tmp/conftest.Y8BuNm.cpp` with content:
+DEBUG: | #if defined(_MSC_VER)
+DEBUG: | #if defined(__clang__)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #else
+DEBUG: | %COMPILER "msvc"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #endif
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | #  if !__cplusplus || __has_feature(cxx_alignof)
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #elif __STDC__
+DEBUG: | %STDC_VERSION 198900L
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #endif
+DEBUG: | #if _MSC_VER || __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -E /tmp/conftest.Y8BuNm.cpp`
+DEBUG: COMPILER = gcc
+DEBUG: VERSION = 5.4.0
+DEBUG: cplusplus = 201402L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+INFO: yes
+INFO: checking the host C++ compiler version... 
+INFO: 5.4.0
+INFO: checking the host C++ compiler works... 
+DEBUG: Creating `/tmp/conftest.xLfUOQ.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.xLfUOQ.cpp`
+INFO: yes
+INFO: checking for 64-bit OS... 
+DEBUG: Creating `/tmp/conftest.qb7469.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | static_assert(sizeof(void *) == 8, "")
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.qb7469.cpp`
+INFO: yes
+INFO: checking bindgen cflags... 
+INFO: no
+INFO: checking for linker... 
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Wl,--version`
+INFO: bfd
+INFO: checking for stdint.h... 
+DEBUG: Creating `/tmp/conftest.QgZ1RO.cpp` with content:
+DEBUG: | #include <stdint.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.QgZ1RO.cpp`
+INFO: yes
+INFO: checking for inttypes.h... 
+DEBUG: Creating `/tmp/conftest.uZEL_G.cpp` with content:
+DEBUG: | #include <inttypes.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.uZEL_G.cpp`
+INFO: yes
+INFO: checking for malloc.h... 
+DEBUG: Creating `/tmp/conftest.ZzzLE5.cpp` with content:
+DEBUG: | #include <malloc.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.ZzzLE5.cpp`
+INFO: yes
+INFO: checking for alloca.h... 
+DEBUG: Creating `/tmp/conftest.Jv9RRK.cpp` with content:
+DEBUG: | #include <alloca.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.Jv9RRK.cpp`
+INFO: yes
+INFO: checking for sys/byteorder.h... 
+DEBUG: Creating `/tmp/conftest.Rn4n3c.cpp` with content:
+DEBUG: | #include <sys/byteorder.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.Rn4n3c.cpp`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | /tmp/conftest.Rn4n3c.cpp:1:27: fatal error: sys/byteorder.h: No such file or directory
+DEBUG: | compilation terminated.
+INFO: no
+INFO: checking for getopt.h... 
+DEBUG: Creating `/tmp/conftest.aOEsSU.cpp` with content:
+DEBUG: | #include <getopt.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.aOEsSU.cpp`
+INFO: yes
+INFO: checking for unistd.h... 
+DEBUG: Creating `/tmp/conftest.dk7hx6.cpp` with content:
+DEBUG: | #include <unistd.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.dk7hx6.cpp`
+INFO: yes
+INFO: checking for nl_types.h... 
+DEBUG: Creating `/tmp/conftest.NClnyJ.cpp` with content:
+DEBUG: | #include <nl_types.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.NClnyJ.cpp`
+INFO: yes
+INFO: checking for cpuid.h... 
+DEBUG: Creating `/tmp/conftest.UszcQh.cpp` with content:
+DEBUG: | #include <cpuid.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.UszcQh.cpp`
+INFO: yes
+INFO: checking for sys/statvfs.h... 
+DEBUG: Creating `/tmp/conftest.aYZUmp.cpp` with content:
+DEBUG: | #include <sys/statvfs.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.aYZUmp.cpp`
+INFO: yes
+INFO: checking for sys/statfs.h... 
+DEBUG: Creating `/tmp/conftest.Wd5Q6v.cpp` with content:
+DEBUG: | #include <sys/statfs.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.Wd5Q6v.cpp`
+INFO: yes
+INFO: checking for sys/vfs.h... 
+DEBUG: Creating `/tmp/conftest.3G6R_n.cpp` with content:
+DEBUG: | #include <sys/vfs.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.3G6R_n.cpp`
+INFO: yes
+INFO: checking for sys/mount.h... 
+DEBUG: Creating `/tmp/conftest.mvDtoU.cpp` with content:
+DEBUG: | #include <sys/mount.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.mvDtoU.cpp`
+INFO: yes
+INFO: checking for sys/quota.h... 
+DEBUG: Creating `/tmp/conftest.hiKR73.cpp` with content:
+DEBUG: | #include <sys/quota.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | quotactl(0, nullptr, 0, (caddr_t)nullptr);
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.hiKR73.cpp`
+INFO: yes
+INFO: checking for linux/quota.h... 
+DEBUG: Creating `/tmp/conftest.rYKKmx.cpp` with content:
+DEBUG: | #include <sys/socket.h>
+DEBUG: | #include <linux/quota.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.rYKKmx.cpp`
+INFO: yes
+INFO: checking for linux/if_addr.h... 
+DEBUG: Creating `/tmp/conftest.OofJsi.cpp` with content:
+DEBUG: | #include <sys/socket.h>
+DEBUG: | #include <linux/if_addr.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.OofJsi.cpp`
+INFO: yes
+INFO: checking for linux/rtnetlink.h... 
+DEBUG: Creating `/tmp/conftest.j9ZdVY.cpp` with content:
+DEBUG: | #include <sys/socket.h>
+DEBUG: | #include <linux/rtnetlink.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.j9ZdVY.cpp`
+INFO: yes
+INFO: checking for sys/queue.h... 
+DEBUG: Creating `/tmp/conftest.l0B1SB.cpp` with content:
+DEBUG: | #include <sys/queue.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.l0B1SB.cpp`
+INFO: yes
+INFO: checking for sys/types.h... 
+DEBUG: Creating `/tmp/conftest.MtiAUg.cpp` with content:
+DEBUG: | #include <sys/types.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.MtiAUg.cpp`
+INFO: yes
+INFO: checking for netinet/in.h... 
+DEBUG: Creating `/tmp/conftest.UsbPVA.cpp` with content:
+DEBUG: | #include <netinet/in.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.UsbPVA.cpp`
+INFO: yes
+INFO: checking for byteswap.h... 
+DEBUG: Creating `/tmp/conftest.Li70ru.cpp` with content:
+DEBUG: | #include <byteswap.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.Li70ru.cpp`
+INFO: yes
+INFO: checking for linux/perf_event.h... 
+DEBUG: Creating `/tmp/conftest._LARuu.cpp` with content:
+DEBUG: | #include <linux/perf_event.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest._LARuu.cpp`
+INFO: yes
+INFO: checking for perf_event_open system call... 
+DEBUG: Creating `/tmp/conftest.PYhenV.cpp` with content:
+DEBUG: | #include <asm/unistd.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | return sizeof(__NR_perf_event_open);
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -c /tmp/conftest.PYhenV.cpp`
+INFO: yes
+INFO: checking whether the C compiler supports -Wunreachable-code-return... 
+DEBUG: Creating `/tmp/conftest.Wuzv15.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Werror -Wunreachable-code-return -c /tmp/conftest.Wuzv15.c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | gcc: error: unrecognized command line option ‘-Wunreachable-code-return’
+INFO: no
+INFO: checking whether the C++ compiler supports -Wunreachable-code-return... 
+DEBUG: Creating `/tmp/conftest.eorwnm.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wunreachable-code-return -c -c /tmp/conftest.eorwnm.cpp`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | g++: error: unrecognized command line option ‘-Wunreachable-code-return’
+INFO: no
+INFO: checking whether the C compiler supports -Wclass-varargs... 
+DEBUG: Creating `/tmp/conftest.msAZGn.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Werror -Wclass-varargs -c /tmp/conftest.msAZGn.c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | gcc: error: unrecognized command line option ‘-Wclass-varargs’
+INFO: no
+INFO: checking whether the C++ compiler supports -Wclass-varargs... 
+DEBUG: Creating `/tmp/conftest.Bg0SYF.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wclass-varargs -c -c /tmp/conftest.Bg0SYF.cpp`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | g++: error: unrecognized command line option ‘-Wclass-varargs’
+INFO: no
+INFO: checking whether the C compiler supports -Wloop-analysis... 
+DEBUG: Creating `/tmp/conftest.ljF3RK.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Werror -Wloop-analysis -c /tmp/conftest.ljF3RK.c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | gcc: error: unrecognized command line option ‘-Wloop-analysis’
+INFO: no
+INFO: checking whether the C++ compiler supports -Wloop-analysis... 
+DEBUG: Creating `/tmp/conftest.WGxEkX.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wloop-analysis -c -c /tmp/conftest.WGxEkX.cpp`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | g++: error: unrecognized command line option ‘-Wloop-analysis’
+INFO: no
+INFO: checking whether the C++ compiler supports -Wc++1z-compat... 
+DEBUG: Creating `/tmp/conftest.918XK_.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wc++1z-compat -c /tmp/conftest.918XK_.cpp`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | g++: error: unrecognized command line option ‘-Wc++1z-compat’
+INFO: no
+INFO: checking whether the C++ compiler supports -Wcomma... 
+DEBUG: Creating `/tmp/conftest.zJg1wI.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wcomma -c /tmp/conftest.zJg1wI.cpp`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | g++: error: unrecognized command line option ‘-Wcomma’
+INFO: no
+INFO: checking whether the C compiler supports -Wduplicated-cond... 
+DEBUG: Creating `/tmp/conftest.z0d7uG.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Werror -Wduplicated-cond -c /tmp/conftest.z0d7uG.c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | gcc: error: unrecognized command line option ‘-Wduplicated-cond’
+INFO: no
+INFO: checking whether the C++ compiler supports -Wduplicated-cond... 
+DEBUG: Creating `/tmp/conftest.GIf9al.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wduplicated-cond -c -c /tmp/conftest.GIf9al.cpp`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | g++: error: unrecognized command line option ‘-Wduplicated-cond’
+INFO: no
+INFO: checking whether the C++ compiler supports -Wimplicit-fallthrough... 
+DEBUG: Creating `/tmp/conftest.8N7Mn2.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wimplicit-fallthrough -c /tmp/conftest.8N7Mn2.cpp`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | g++: error: unrecognized command line option ‘-Wimplicit-fallthrough’
+INFO: no
+INFO: checking whether the C compiler supports -Wstring-conversion... 
+DEBUG: Creating `/tmp/conftest.4B6zbt.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Werror -Wstring-conversion -c /tmp/conftest.4B6zbt.c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | gcc: error: unrecognized command line option ‘-Wstring-conversion’
+INFO: no
+INFO: checking whether the C++ compiler supports -Wstring-conversion... 
+DEBUG: Creating `/tmp/conftest.7jkND8.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wstring-conversion -c -c /tmp/conftest.7jkND8.cpp`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | g++: error: unrecognized command line option ‘-Wstring-conversion’
+INFO: no
+INFO: checking whether the C++ compiler supports -Wno-inline-new-delete... 
+DEBUG: Creating `/tmp/conftest.YpgJDH.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Winline-new-delete -c /tmp/conftest.YpgJDH.cpp`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | g++: error: unrecognized command line option ‘-Winline-new-delete’
+INFO: no
+INFO: checking whether the C compiler supports -Wno-error=maybe-uninitialized... 
+DEBUG: Creating `/tmp/conftest.GGWzzC.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Werror -Wno-error=maybe-uninitialized -c /tmp/conftest.GGWzzC.c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-error=maybe-uninitialized... 
+DEBUG: Creating `/tmp/conftest.Bfnuy9.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wno-error=maybe-uninitialized -c -c /tmp/conftest.Bfnuy9.cpp`
+INFO: yes
+INFO: checking whether the C compiler supports -Wno-error=deprecated-declarations... 
+DEBUG: Creating `/tmp/conftest.25rXnD.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Werror -Wno-error=deprecated-declarations -c /tmp/conftest.25rXnD.c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-error=deprecated-declarations... 
+DEBUG: Creating `/tmp/conftest.Aok7vy.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wno-error=deprecated-declarations -c -c /tmp/conftest.Aok7vy.cpp`
+INFO: yes
+INFO: checking whether the C compiler supports -Wno-error=array-bounds... 
+DEBUG: Creating `/tmp/conftest.j2yrVZ.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Werror -Wno-error=array-bounds -c /tmp/conftest.j2yrVZ.c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-error=array-bounds... 
+DEBUG: Creating `/tmp/conftest.eQ_g7n.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wno-error=array-bounds -c -c /tmp/conftest.eQ_g7n.cpp`
+INFO: yes
+INFO: checking whether the C compiler supports -Wno-error=free-nonheap-object... 
+DEBUG: Creating `/tmp/conftest.TGc2Kd.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Werror -Wno-error=free-nonheap-object -c /tmp/conftest.TGc2Kd.c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-error=free-nonheap-object... 
+DEBUG: Creating `/tmp/conftest.Nj4L26.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wno-error=free-nonheap-object -c -c /tmp/conftest.Nj4L26.cpp`
+INFO: yes
+INFO: checking whether the C compiler supports -Wformat... 
+DEBUG: Creating `/tmp/conftest.UOxyXW.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Werror -Wformat -c /tmp/conftest.UOxyXW.c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wformat... 
+DEBUG: Creating `/tmp/conftest.o4fq9a.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wformat -c -c /tmp/conftest.o4fq9a.cpp`
+INFO: yes
+INFO: checking whether the C compiler supports -Wformat-security... 
+DEBUG: Creating `/tmp/conftest.3Bxblb.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Werror -Wformat-security -c /tmp/conftest.3Bxblb.c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wformat-security... 
+DEBUG: Creating `/tmp/conftest.BJ6vpu.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wformat-security -c -c /tmp/conftest.BJ6vpu.cpp`
+INFO: yes
+INFO: checking whether the C compiler supports -Wformat-overflow=2... 
+DEBUG: Creating `/tmp/conftest.nS1Pce.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Werror -Wformat-overflow=2 -c /tmp/conftest.nS1Pce.c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | gcc: error: unrecognized command line option ‘-Wformat-overflow=2’
+INFO: no
+INFO: checking whether the C++ compiler supports -Wformat-overflow=2... 
+DEBUG: Creating `/tmp/conftest.wP2Y1w.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wformat-overflow=2 -c -c /tmp/conftest.wP2Y1w.cpp`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | g++: error: unrecognized command line option ‘-Wformat-overflow=2’
+INFO: no
+INFO: checking whether the C compiler supports -Wno-gnu-zero-variadic-macro-arguments... 
+DEBUG: Creating `/tmp/conftest.cP0h22.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/gcc -std=gnu99 -Werror -Wgnu-zero-variadic-macro-arguments -c /tmp/conftest.cP0h22.c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | gcc: error: unrecognized command line option ‘-Wgnu-zero-variadic-macro-arguments’
+INFO: no
+INFO: checking whether the C++ compiler supports -Wno-gnu-zero-variadic-macro-arguments... 
+DEBUG: Creating `/tmp/conftest.fkTK7o.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wgnu-zero-variadic-macro-arguments -c -c /tmp/conftest.fkTK7o.cpp`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | g++: error: unrecognized command line option ‘-Wgnu-zero-variadic-macro-arguments’
+INFO: no
+INFO: checking whether the C++ compiler supports -Wno-noexcept-type... 
+DEBUG: Creating `/tmp/conftest.XUVeaq.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -Wnoexcept-type -c /tmp/conftest.XUVeaq.cpp`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | g++: error: unrecognized command line option ‘-Wnoexcept-type’
+INFO: no
+INFO: checking whether the C++ compiler supports -fno-sized-deallocation... 
+DEBUG: Creating `/tmp/conftest.TZChFm.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/usr/bin/g++ -std=gnu++14 -Werror -fno-sized-deallocation -c /tmp/conftest.TZChFm.cpp`
+INFO: yes
+INFO: checking for awk... 
+DEBUG: awk: Trying gawk
+INFO: /usr/bin/gawk
+INFO: checking for perl... 
+DEBUG: perl: Trying perl5
+DEBUG: perl: Trying perl
+INFO: /usr/bin/perl
+INFO: checking for minimum required perl version >= 5.006... 
+DEBUG: Executing: `/usr/bin/perl -e 'print $]'`
+INFO: 5.022001
+INFO: checking for full perl installation... 
+INFO: yes
+INFO: checking for gmake... 
+DEBUG: gmake: Trying gmake
+DEBUG: gmake: Trying make
+INFO: /usr/bin/make
+INFO: checking for watchman... 
+INFO: not found
+INFO: checking for xargs... 
+DEBUG: xargs: Trying xargs
+INFO: /usr/bin/xargs
+INFO: checking for rpmbuild... 
+DEBUG: rpmbuild: Trying rpmbuild
+INFO: not found
+INFO: checking for autoconf... 
+INFO: /usr/bin/autoconf2.13
+DEBUG: Injecting the following to old-configure:
+DEBUG: | export AUTOCONF=/usr/bin/autoconf2.13
+DEBUG: | _topsrcdir=/home/hf/Desktop/nnnnn/test/data
+DEBUG: | _objdir=/home/hf/Desktop/nnnnn/test/data/js/src/obj
+DEBUG: | MOZ_BUILD_ROOT=/home/hf/Desktop/nnnnn/test/data/js/src/obj
+DEBUG: | DIST=/home/hf/Desktop/nnnnn/test/data/js/src/obj/dist
+DEBUG: | PYTHON=/home/hf/Desktop/nnnnn/test/data/js/src/obj/_virtualenv/bin/python
+DEBUG: | CROSS_COMPILE=
+DEBUG: | HAVE_64BIT_BUILD=1
+DEBUG: | OS_TARGET=Linux
+DEBUG: | OS_ARCH=Linux
+DEBUG: | OS_TEST=x86_64
+DEBUG: | CPU_ARCH=x86_64
+DEBUG: | HOST_OS_ARCH=Linux
+DEBUG: | MOZ_BUILD_APP=js
+DEBUG: | RELEASE_OR_BETA=1
+DEBUG: | MOZILLA_VERSION=60.1.1
+DEBUG: | MOZILLA_SYMBOLVERSION=60
+DEBUG: | MOZ_UPDATE_CHANNEL=default
+DEBUG: | COMPILE_ENVIRONMENT=1
+DEBUG: | MOZ_DEBUG=
+DEBUG: | PKG_CONFIG=/usr/bin/pkg-config
+DEBUG: | MOZ_PGO=
+DEBUG: | MOZ_OPTIMIZE=1
+DEBUG: | android_version=21
+DEBUG: | CC='/usr/bin/gcc -std=gnu99'
+DEBUG: | CC_TYPE=gcc
+DEBUG: | CC_VERSION=5.4.0
+DEBUG: | CPP='/usr/bin/gcc -E -std=gnu99'
+DEBUG: | CXX='/usr/bin/g++ -std=gnu++14'
+DEBUG: | CXXCPP='/usr/bin/g++ -E -std=gnu++14'
+DEBUG: | HOST_CC='/usr/bin/gcc -std=gnu99'
+DEBUG: | HOST_CC_TYPE=gcc
+DEBUG: | HOST_CC_VERSION=5.4.0
+DEBUG: | HOST_CXX='/usr/bin/g++ -std=gnu++14'
+DEBUG: | MOZ_DEBUG_FLAGS=-g
+DEBUG: | MOZ_HARDENING_CFLAGS='-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2'
+DEBUG: | MOZ_HARDENING_CFLAGS_JS='-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2'
+DEBUG: | MOZ_MEMORY=1
+DEBUG: | HAVE_MALLOC_H=1
+DEBUG: | MOZ_ENABLE_WARNINGS_AS_ERRORS=
+DEBUG: | _WARNINGS_CFLAGS='-Wall -Wempty-body -Wignored-qualifiers -Wpointer-arith -Wsign-compare -Wtype-limits -Wunreachable-code -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -Wno-error=array-bounds -Wno-error=free-nonheap-object -Wformat -Wformat-security'
+DEBUG: | _WARNINGS_CXXFLAGS='-Wall -Wempty-body -Wignored-qualifiers -Woverloaded-virtual -Wpointer-arith -Wsign-compare -Wtype-limits -Wunreachable-code -Wwrite-strings -Wno-invalid-offsetof -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -Wno-error=array-bounds -Wno-error=free-nonheap-object -Wformat -Wformat-security'
+DEBUG: | _WARNINGS_HOST_CFLAGS=''
+DEBUG: | _WARNINGS_HOST_CXXFLAGS=''
+DEBUG: | _COMPILATION_CFLAGS=''
+DEBUG: | _COMPILATION_CXXFLAGS=-fno-sized-deallocation
+DEBUG: | _COMPILATION_HOST_CFLAGS=''
+DEBUG: | _COMPILATION_HOST_CXXFLAGS=''
+DEBUG: | OBJ_SUFFIX=o
+DEBUG: | JS_STANDALONE=1
+DEBUG: | JS_SHARED_LIBRARY=1
+DEBUG: | AWK=/usr/bin/gawk
+DEBUG: | PERL=/usr/bin/perl
+DEBUG: Running /bin/sh /home/hf/Desktop/nnnnn/test/data/js/src/old-configure --host=x86_64-pc-linux-gnu --target=x86_64-pc-linux-gnu --enable-jemalloc
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:708: checking host system type
+configure:729: checking target system type
+configure:747: checking build system type
+configure:1877: checking for gcc
+configure:1990: checking whether the C compiler (/usr/bin/gcc -std=gnu99  ) works
+configure:2006: /usr/bin/gcc -std=gnu99 -o conftest    conftest.c  1>&5
+configure:2003:1: warning: return type defaults to 'int' [-Wimplicit-int]
+configure:2032: checking whether the C compiler (/usr/bin/gcc -std=gnu99  ) is a cross-compiler
+configure:2037: checking whether we are using GNU C
+configure:2046: /usr/bin/gcc -std=gnu99 -E conftest.c
+configure:2065: checking whether /usr/bin/gcc -std=gnu99 accepts -g
+configure:2101: checking for c++
+configure:2133: checking whether the C++ compiler (/usr/bin/g++ -std=gnu++14  ) works
+configure:2149: /usr/bin/g++ -std=gnu++14 -o conftest    conftest.C  1>&5
+configure:2175: checking whether the C++ compiler (/usr/bin/g++ -std=gnu++14  ) is a cross-compiler
+configure:2180: checking whether we are using GNU C++
+configure:2189: /usr/bin/g++ -std=gnu++14 -E conftest.C
+configure:2208: checking whether /usr/bin/g++ -std=gnu++14 accepts -g
+configure:2242: checking for ranlib
+configure:2274: checking for as
+configure:2328: checking for ar
+configure:2363: checking for strip
+configure:2398: checking for windres
+configure:2817: checking for sb-conf
+configure:2817: checking for ve
+configure:2940: checking for X
+configure:3007: /usr/bin/gcc -E -std=gnu99  conftest.c >/dev/null 2>conftest.out
+configure:3003:27: fatal error: X11/Intrinsic.h: No such file or directory
+compilation terminated.
+configure: failed program was:
+#line 3002 "configure"
+#include "confdefs.h"
+#include <X11/Intrinsic.h>
+configure:3083: /usr/bin/gcc -std=gnu99 -o conftest    conftest.c -lXt  1>&5
+configure: In function 'main':
+configure:3079:1: warning: implicit declaration of function 'XtMalloc' [-Wimplicit-function-declaration]
+/usr/bin/ld: cannot find -lXt
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 3076 "configure"
+#include "confdefs.h"
+
+int main() {
+XtMalloc()
+; return 0; }
+configure:3957: /usr/bin/gcc -std=gnu99 -c   conftest.c 1>&5
+configure: In function 'main':
+configure:3953:15: error: '__thumb2__' undeclared (first use in this function)
+configure:3953:15: note: each undeclared identifier is reported only once for each function it appears in
+configure: failed program was:
+#line 3950 "configure"
+#include "confdefs.h"
+
+int main() {
+return sizeof(__thumb2__);
+; return 0; }
+configure:4714: /usr/bin/gcc -std=gnu99 -o conftest    conftest.c  1>&5
+configure:4748: checking for --noexecstack option to as
+configure:4759: /usr/bin/gcc -std=gnu99 -c  -Wa,--noexecstack  conftest.c 1>&5
+configure:4772: checking for -z noexecstack option to ld
+configure:4783: /usr/bin/gcc -std=gnu99 -o conftest    -Wl,-z,noexecstack conftest.c  1>&5
+configure:4796: checking for -z text option to ld
+configure:4807: /usr/bin/gcc -std=gnu99 -o conftest    -Wl,-z,noexecstack -Wl,-z,text conftest.c  1>&5
+configure:4820: checking for -z relro option to ld
+configure:4831: /usr/bin/gcc -std=gnu99 -o conftest    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro conftest.c  1>&5
+configure:4844: checking for --build-id option to ld
+configure:4855: /usr/bin/gcc -std=gnu99 -o conftest    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c  1>&5
+configure:5452: checking whether the linker supports Identical Code Folding
+configure:5461: /usr/bin/gcc -std=gnu99 -o conftest  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id -Wl,--icf=safe -ffunction-sections conftest.c  1>&2
+/usr/bin/ld: unrecognized option '--icf=safe'
+/usr/bin/ld: use the --help option for usage information
+collect2: error: ld returned 1 exit status
+configure:5502: checking whether removing dead symbols breaks debugging
+configure:5509: /usr/bin/gcc -std=gnu99 -o conftest.o  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -g -c conftest.c 1>&2
+configure:5510: /usr/bin/gcc -std=gnu99 -o conftest  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id -g -Wl,--gc-sections conftest.o  1>&2
+configure:5598: checking for working const
+configure:5652: /usr/bin/gcc -std=gnu99 -c  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 conftest.c 1>&5
+configure:5678: checking for mode_t
+configure:5716: checking for off_t
+configure:5754: checking for pid_t
+configure:5792: checking for size_t
+configure:5842: checking for ssize_t
+configure:5855: /usr/bin/gcc -std=gnu99 -c  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 conftest.c 1>&5
+configure:5898: checking whether 64-bits std::atomic requires -latomic
+configure:5914: /usr/bin/g++ -std=gnu++14 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-rtti -ffunction-sections -fdata-sections -fno-exceptions -fno-math-errno  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.C  1>&5
+configure:5981: checking for dirent.h that defines DIR
+configure:5994: /usr/bin/gcc -std=gnu99 -c  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 conftest.c 1>&5
+configure:6022: checking for opendir in -ldir
+configure:6041: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -ldir   1>&5
+/usr/bin/ld: cannot find -ldir
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 6030 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char opendir();
+
+int main() {
+opendir()
+; return 0; }
+configure:6174: checking for gethostbyname_r in -lc_r
+configure:6193: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lc_r   1>&5
+/usr/bin/ld: cannot find -lc_r
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 6182 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char gethostbyname_r();
+
+int main() {
+gethostbyname_r()
+; return 0; }
+configure:6230: checking for library containing dlopen
+configure:6248: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c  1>&5
+/tmp/ccQjkfQe.o: In function `main':
+conftest.c:(.text.main+0xa): undefined reference to `dlopen'
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 6237 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char dlopen();
+
+int main() {
+dlopen()
+; return 0; }
+configure:6270: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -ldl   1>&5
+configure:6288: checking for dlfcn.h
+configure:6301: /usr/bin/gcc -std=gnu99 -c  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 conftest.c 1>&5
+configure:6387: checking for socket in -lsocket
+configure:6406: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lsocket  -ldl  1>&5
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 6395 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char socket();
+
+int main() {
+socket()
+; return 0; }
+configure:6443: checking for pthread_create in -lpthreads
+configure:6462: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lpthreads  -ldl  1>&5
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 6451 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char pthread_create();
+
+int main() {
+pthread_create()
+; return 0; }
+configure:6481: checking for pthread_create in -lpthread
+configure:6500: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lpthread  -ldl  1>&5
+configure:6631: checking whether /usr/bin/gcc -std=gnu99 accepts -pthread
+configure:6729: checking whether /usr/bin/gcc -std=gnu99 needs -traditional
+configure:6775: checking for 8-bit clean memcmp
+configure:6793: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -ldl  1>&5
+configure:6785:1: warning: return type defaults to 'int' [-Wimplicit-int]
+configure: In function 'main':
+configure:6788:3: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+configure:6788:3: warning: incompatible implicit declaration of built-in function 'exit'
+configure:6788:3: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:6788:8: warning: implicit declaration of function 'memcmp' [-Wimplicit-function-declaration]
+configure:6813: checking for getc_unlocked
+configure:6845: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -ldl  1>&5
+configure:6813: checking for _getc_nolock
+configure:6845: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -ldl  1>&5
+/tmp/cc22f10t.o: In function `main':
+conftest.c:(.text.main+0xa): undefined reference to `_getc_nolock'
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 6818 "configure"
+#define _getc_nolock innocuous__getc_nolock
+#include "confdefs.h"
+#undef _getc_nolock
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char _getc_nolock(); below.  */
+#define _getc_nolock innocuous__getc_nolock
+#include <assert.h>
+#undef _getc_nolock
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char _getc_nolock();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub__getc_nolock) || defined (__stub____getc_nolock)
+choke me
+#else
+_getc_nolock();
+#endif
+
+; return 0; }
+configure:6813: checking for gmtime_r
+configure:6845: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -ldl  1>&5
+configure:6813: checking for localtime_r
+configure:6845: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -ldl  1>&5
+configure:6813: checking for pthread_getname_np
+configure:6845: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -ldl  1>&5
+configure:6878: checking for clock_gettime(CLOCK_MONOTONIC)
+configure:6894: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -ldl   1>&5
+configure:6928: checking for sin in -lm
+configure:6947: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lm  -ldl  1>&5
+configure:6940:6: warning: conflicting types for built-in function 'sin'
+configure:6978: checking for sincos in -lm
+configure:6997: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lm  -lm -ldl  1>&5
+configure:6990:6: warning: conflicting types for built-in function 'sincos'
+configure:7024: checking for __sincos in -lm
+configure:7043: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lm  -lm -ldl  1>&5
+/tmp/cclGmnWL.o: In function `main':
+conftest.c:(.text.main+0xa): undefined reference to `__sincos'
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 7032 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char __sincos();
+
+int main() {
+__sincos()
+; return 0; }
+configure:7071: checking for res_ninit()
+configure:7094: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lm -ldl  1>&5
+configure:7122: checking for nl_langinfo and CODESET
+configure:7134: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lm -ldl  1>&5
+configure:7170: checking for an implementation of va_copy()
+configure:7191: /usr/bin/gcc -std=gnu99 -c  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 conftest.c 1>&5
+configure:7207: checking whether va_list can be copied by value
+configure:7228: /usr/bin/gcc -std=gnu99 -c  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 conftest.c 1>&5
+configure: In function 'f':
+configure:7218:19: error: assignment to expression with array type
+configure: failed program was:
+#line 7212 "configure"
+#include "confdefs.h"
+#include <stdarg.h>
+                     #include <stdlib.h>
+        void f (int i, ...) {
+            va_list args1, args2;
+            va_start (args1, i);
+            args2 = args1;
+            if (va_arg (args2, int) != 42 || va_arg (args1, int) != 42)
+                exit (1);
+            va_end (args1); va_end (args2);
+        }
+int main() {
+f(0, 42); return 0
+; return 0; }
+configure:7324: checking for C++ dynamic_cast to void*
+configure:7351: /usr/bin/g++ -std=gnu++14 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-rtti -ffunction-sections -fdata-sections -fno-exceptions -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.C -lm -ldl  1>&5
+configure:7384: checking for __thread keyword for TLS variables
+configure:7396: /usr/bin/g++ -std=gnu++14 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-rtti -ffunction-sections -fdata-sections -fno-exceptions -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id -fPIC -shared -Wl,-z,defs -Wl,--gc-sections  conftest.C -lm -ldl  1>&5
+configure:7444: checking for localeconv
+configure:7476: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lm -ldl  1>&5
+configure:7616: checking NSPR selection
+configure:7944: checking for gzread in -lz
+configure:7963: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lz  -lm -ldl  1>&5
+/usr/bin/ld: cannot find -lz
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 7952 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char gzread();
+
+int main() {
+gzread()
+; return 0; }
+configure:8087: checking for valid optimization flags
+configure:8098: /usr/bin/gcc -std=gnu99 -c  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread -freorder-blocks -O3  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 conftest.c 1>&5
+configure:8515: checking for __cxa_demangle
+configure:8550: /usr/bin/g++ -std=gnu++14 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-rtti -ffunction-sections -fdata-sections -fno-exceptions -fno-math-errno -pthread  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.C -lm -ldl  1>&5
+configure:8612: checking for -pipe support
+configure:8630: checking for tm_zone tm_gmtoff in struct tm
+configure:8642: /usr/bin/g++ -std=gnu++14 -c  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-rtti -ffunction-sections -fdata-sections -fno-exceptions -fno-math-errno -pthread -pipe  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 conftest.C 1>&5
+configure:8684: checking what kind of list files are supported by the linker
+configure:8689: /usr/bin/gcc -std=gnu99 -o conftest.o -c  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 conftest.c 1>&5
+configure:8691: /usr/bin/gcc -std=gnu99 -o conftest -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.list -lm -ldl  1>&5
+configure:8717: checking what kind of ordering can be done with the linker
+configure:8732: /usr/bin/gcc -std=gnu99 -o conftest  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id -Wl,--section-ordering-file,conftest.order conftest.c -lm -ldl  1>&5
+/usr/bin/ld: unrecognized option '--section-ordering-file'
+/usr/bin/ld: use the --help option for usage information
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 8725 "configure"
+#include "confdefs.h"
+
+int main() {
+
+; return 0; }
+configure:8744: /usr/bin/gcc -std=gnu99 -shared -Wl,-z,defs -Wl,--gc-sections -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id -o conftest -Wl
+gcc: error: unrecognized command line option '-Wl'
+configure:9181: checking for posix_fadvise
+configure:9213: /usr/bin/gcc -std=gnu99 -o conftest -Wall -Wempty-body -Wignored-qualifiers -Wpointer-arith -Wsign-compare -Wtype-limits -Wunreachable-code -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -Wno-error=array-bounds -Wno-error=free-nonheap-object -Wformat -Wformat-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lm -ldl  1>&5
+configure:9181: checking for posix_fallocate
+configure:9213: /usr/bin/gcc -std=gnu99 -o conftest -Wall -Wempty-body -Wignored-qualifiers -Wpointer-arith -Wsign-compare -Wtype-limits -Wunreachable-code -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -Wno-error=array-bounds -Wno-error=free-nonheap-object -Wformat -Wformat-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lm -ldl  1>&5
+configure:9283: checking for malloc.h
+configure:9296: /usr/bin/gcc -std=gnu99 -c -Wall -Wempty-body -Wignored-qualifiers -Wpointer-arith -Wsign-compare -Wtype-limits -Wunreachable-code -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -Wno-error=array-bounds -Wno-error=free-nonheap-object -Wformat -Wformat-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 conftest.c 1>&5
+configure:9331: checking for strndup
+configure:9363: /usr/bin/gcc -std=gnu99 -o conftest -Wall -Wempty-body -Wignored-qualifiers -Wpointer-arith -Wsign-compare -Wtype-limits -Wunreachable-code -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -Wno-error=array-bounds -Wno-error=free-nonheap-object -Wformat -Wformat-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lm -ldl  1>&5
+configure:9347:6: warning: conflicting types for built-in function 'strndup'
+configure:9331: checking for posix_memalign
+configure:9363: /usr/bin/gcc -std=gnu99 -o conftest -Wall -Wempty-body -Wignored-qualifiers -Wpointer-arith -Wsign-compare -Wtype-limits -Wunreachable-code -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -Wno-error=array-bounds -Wno-error=free-nonheap-object -Wformat -Wformat-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lm -ldl  1>&5
+configure:9347:6: warning: conflicting types for built-in function 'posix_memalign'
+configure:9331: checking for memalign
+configure:9363: /usr/bin/gcc -std=gnu99 -o conftest -Wall -Wempty-body -Wignored-qualifiers -Wpointer-arith -Wsign-compare -Wtype-limits -Wunreachable-code -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -Wno-error=array-bounds -Wno-error=free-nonheap-object -Wformat -Wformat-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lm -ldl  1>&5
+configure:9394: checking for malloc_usable_size
+configure:9426: /usr/bin/gcc -std=gnu99 -o conftest -Wall -Wempty-body -Wignored-qualifiers -Wpointer-arith -Wsign-compare -Wtype-limits -Wunreachable-code -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -Wno-error=array-bounds -Wno-error=free-nonheap-object -Wformat -Wformat-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -lpthread  -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,--build-id conftest.c -lm -ldl  1>&5
+configure:9456: checking whether malloc_usable_size definition can use const argument
+configure:9467: /usr/bin/gcc -std=gnu99 -c -Wall -Wempty-body -Wignored-qualifiers -Wpointer-arith -Wsign-compare -Wtype-limits -Wunreachable-code -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -Wno-error=array-bounds -Wno-error=free-nonheap-object -Wformat -Wformat-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 conftest.c 1>&5
+configure:9461:26: error: conflicting types for 'malloc_usable_size'
+In file included from configure:9459:0:
+/usr/include/malloc.h:129:15: note: previous declaration of 'malloc_usable_size' was here
+ extern size_t malloc_usable_size (void *__ptr) __THROW;
+               ^
+configure: failed program was:
+#line 9458 "configure"
+#include "confdefs.h"
+#include <malloc.h>
+                  #include <stddef.h>
+                  size_t malloc_usable_size(const void *ptr);
+int main() {
+return malloc_usable_size(0);
+; return 0; }
+configure:9489: checking for valloc in malloc.h
+configure:9514: checking for valloc in unistd.h
+configure:9544: checking for localeconv

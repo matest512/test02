@@ -1,0 +1,1 @@
+/home/hf/Desktop/nnnnn/test/data/testing/mozbase/mozprofile/tests/files/prefs_with_comments.js

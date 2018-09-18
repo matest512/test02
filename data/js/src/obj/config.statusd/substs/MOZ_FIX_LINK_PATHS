@@ -1,0 +1,4 @@
+[
+    "-Wl,-rpath-link,/home/hf/Desktop/nnnnn/test/data/js/src/obj/dist/bin", 
+    "-Wl,-rpath-link,/usr/local/lib"
+]

@@ -1,0 +1,5 @@
+[
+    "-I/home/hf/Desktop/nnnnn/test/data/js/src/obj/dist/system_wrappers", 
+    "-include", 
+    "/home/hf/Desktop/nnnnn/test/data/config/gcc_hidden.h"
+]

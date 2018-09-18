@@ -1,0 +1,1 @@
+/home/hf/Desktop/nnnnn/test/data/testing/mozbase/moztest/moztest/adapters/__init__.py

@@ -1,0 +1,21 @@
+5
+5mozbase/manifestparser/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemanifestparser/**mozbase
+5mozbase/mozcrash/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozcrash/**mozbase
+5mozbase/mozdebug/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozdebug/**mozbase
+5mozbase/mozdevice/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozdevice/**mozbase
+5mozbase/mozfile/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozfile/**mozbase
+5mozbase/mozhttpd/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozhttpd/**mozbase
+5mozbase/mozinfo/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozinfo/**mozbase
+5mozbase/mozinstall/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozinstall/**mozbase
+5mozbase/mozleak/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozleak/**mozbase
+5mozbase/mozlog/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozlog/**mozbase
+5mozbase/moznetwork/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemoznetwork/**mozbase
+5mozbase/mozprocess/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozprocess/**mozbase
+5mozbase/mozprofile/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozprofile/**mozbase
+5mozbase/mozrunner/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozrunner/**mozbase
+5mozbase/mozscreenshot/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozscreenshot/**mozbase
+5mozbase/mozsystemmonitor/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozsystemmonitor/**mozbase
+5mozbase/moztest/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemoztest/**mozbase
+5mozbase/mozversion/**/home/hf/Desktop/nnnnn/test/data/testing/mozbasemozversion/**mozbase
+1mozbase/setup_development.py/home/hf/Desktop/nnnnn/test/data/testing/mozbase/setup_development.py
+4python/./python.ini

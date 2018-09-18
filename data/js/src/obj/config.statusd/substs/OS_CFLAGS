@@ -1,0 +1,22 @@
+[
+    "-Wall", 
+    "-Wempty-body", 
+    "-Wignored-qualifiers", 
+    "-Wpointer-arith", 
+    "-Wsign-compare", 
+    "-Wtype-limits", 
+    "-Wunreachable-code", 
+    "-Wno-error=maybe-uninitialized", 
+    "-Wno-error=deprecated-declarations", 
+    "-Wno-error=array-bounds", 
+    "-Wno-error=free-nonheap-object", 
+    "-Wformat", 
+    "-Wformat-security", 
+    "-U_FORTIFY_SOURCE", 
+    "-D_FORTIFY_SOURCE=2", 
+    "-ffunction-sections", 
+    "-fdata-sections", 
+    "-fno-math-errno", 
+    "-pthread", 
+    "-pipe"
+]

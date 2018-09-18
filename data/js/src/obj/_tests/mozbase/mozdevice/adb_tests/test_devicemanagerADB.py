@@ -1,0 +1,1 @@
+/home/hf/Desktop/nnnnn/test/data/testing/mozbase/mozdevice/adb_tests/test_devicemanagerADB.py

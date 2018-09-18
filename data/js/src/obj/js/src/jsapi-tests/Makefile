@@ -1,0 +1,19 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT MODIFY BY HAND.
+DEPTH := ../../..
+topobjdir := /home/hf/Desktop/nnnnn/test/data/js/src/obj
+topsrcdir := /home/hf/Desktop/nnnnn/test/data
+srcdir := /home/hf/Desktop/nnnnn/test/data/js/src/jsapi-tests
+VPATH := /home/hf/Desktop/nnnnn/test/data/js/src/jsapi-tests
+relativesrcdir := js/src/jsapi-tests
+include $(DEPTH)/config/autoconf.mk
+# -*- Mode: makefile -*-
+#
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+ifdef QEMU_EXE
+MOZ_POST_PROGRAM_COMMAND = $(topsrcdir)/build/qemu-wrap --qemu $(QEMU_EXE) --libdir $(CROSS_LIB)
+endif
+
+include $(topsrcdir)/config/recurse.mk
